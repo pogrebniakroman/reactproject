@@ -1,8 +1,20 @@
+const numberOfFilms = +prompt('How much films you watch?', '');
+const personalMovieDB = {
+    count : numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: {},
+    privat: false
 
-const answers = [];
+};
 
-answers[0] = prompt('What is your name?');
-answers[1] = prompt('What is your surname?');
-answers[2] = prompt('how your ');
+const a = prompt('One is watched films', ''),
+      b = prompt('How you value it', ''),
+      c = prompt('One is watched films', ''),
+      d = prompt('How you value it', '');
 
-document.write(answers);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+console.log(personalMovieDB);
+
